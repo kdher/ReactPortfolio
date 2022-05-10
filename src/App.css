@@ -1,0 +1,502 @@
+:root {
+	--white-color: #ffffff;
+	--green-color: #495126;
+	--purple-color: #665083;
+	--blackish-green: #24290e;
+	--whitish: #4160eb;
+  --pink: pink;
+  --primary-color: rgb(66, 127, 241);
+
+
+}
+/* next highest global styles declaration */
+* {
+	/* border: 1px solid var(--purple-color); */
+	line-height: 1.5;
+}
+
+.img {
+  max-width: 15%;
+  max-height: 15%;
+  padding: 10px;
+ }
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: var(--whitish);
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px 35px;
+  background-color:hsl(235, 78%, 21%);
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+ 
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  font-family: 'Changa', sans-serif;
+  color: rgb(131, 195, 247);
+  margin: 0;
+}
+
+
+header nav {
+ display: flex;
+  flex: 4 1;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  
+}
+
+header nav ul {
+  font-family: 'Changa', sans-serif;
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+}
+
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 1.3vw;
+  color: rgb(131, 195, 247);
+  text-decoration: none;
+  border-bottom: 2px solid;
+  padding-bottom: 2px;
+  display: inline;
+}
+
+    nav a:hover {
+  color: white;
+    }
+ 
+.article-content nav {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 1.3vw;
+  color: var(--primary-color);
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+
+.article-content  h2 {
+	font-size: 1.5rem;
+	color: var(--primary-color);
+}
+
+.article-content nav ul {
+  display: flex;
+flex-wrap: wrap;
+align-items: center;
+list-style: none;
+justify-content: space-between;
+}
+.hero {
+  margin: auto;
+}
+.hero img {
+  width: 250px;
+  border-radius: 20px;
+  padding: 5%;
+  height: auto;
+}
+
+  
+  .hero h2 {
+    font-style: italic;
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-top: 300px;
+    background-color:rgb(229, 232, 238);
+  }
+  .image2 {
+    position: absolute;
+    justify-content:center;
+    top: 100px; ;
+    
+   border: 3px rgb(131, 195, 247);
+    height:190px;
+    width: 190px;
+    border-radius: 10px;
+  }
+
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 30vh;
+	padding: 2%;
+	
+
+}
+
+.article-heading {
+  width: 350px;
+	padding: 20px 10px;
+  font-family: 'Changa', sans-serif;
+	border-right: 9px dashed var(--whitish);
+ 
+}
+
+.article-heading h3 {
+  display: inline;
+	font-size: 2.7rem;
+	line-height: 2;
+  margin: auto;
+  align-items: center;
+}
+
+.article-content {
+  flex: 4;
+  padding: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  
+  .article-content article {
+    padding-right: 20px;
+    padding-left: 20px;
+    display: block  ;
+  }
+  
+  .article-content p {
+    padding-top: 0;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+  }
+  
+  .article-content article h2 {
+    font-size: 2rem;
+    color: var(--blackish-green);
+  }
+  
+  .article-content article p {
+    line-height: 2;
+    margin-bottom: 10px;
+  }
+  
+
+  #portafolio {
+    flex: auto;
+    
+  }
+  
+
+  .works{
+    flex-wrap: wrap;
+    position: relative;
+    width: 130vh;
+    margin: auto;
+    padding: 10px; 
+  } 
+  .cuadro {
+    transition: transform .1s ease;
+  }
+  .cuadro:hover {
+      transform: scale(1.1);
+  }
+  .cuadro img:hover {
+    opacity: 1;
+  }
+.pages{
+  transition: transform .1s ease;
+}
+
+  .pages:hover {
+    transform: scale(1.1);
+}
+.pages img:hover {
+  opacity: 1;
+}
+.cuadro img {
+  opacity: .5;
+  transform: translate(0,0);
+  /*
+  Change the opacity value to change how "faded" you want the image to appear when it is not hovered.
+  */
+  transition: opacity .25s ease-in-out;
+}
+.pages img {
+  opacity: .5;
+  transform: translate(0,0);
+  /*
+  Change the opacity value to change how "faded" you want the image to appear when it is not hovered.
+  */
+  transition: opacity .25s ease-in-out;
+}
+
+  .cuadro {
+    position: relative;
+    margin: 10px;
+    width: 300px;
+    height: 350px;
+    flex-grow: 1;
+    
+  
+  }
+    .pages {
+     position: relative;
+      width: 310px; 
+      height: 150px;
+      margin: 10px;
+      flex-grow: 1;
+    }
+    .works img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+    .works img.cuadro {
+      object-fit: fill;
+    }
+    
+    .works img.pages {
+      object-fit: fill;
+    }
+
+.text  h2{
+
+  position: absolute;
+    border-radius: 5px;
+    top: 300px;
+    left: 30;
+   
+    font-size: 28px;
+    color: var(--primary-color);
+    font-family: 'Changa', sans-serif;
+    background-color:rgb(229, 232, 238);
+}
+
+.icono {
+  position: absolute;
+    border-radius: 7px;
+    top: 300px;
+    left: 370px;
+    color: black;
+    font-size: 8px;
+    background-color:rgb(229, 232, 238);
+}
+
+.iconos {
+  position: absolute;
+    border-radius: 7px;
+    top: 100px;
+    left: 370px;
+    color: black;
+    font-size: 8px;
+    background-color:rgb(229, 232, 238);
+}
+.text1  h2{
+
+  position: absolute;
+    border-radius: 5px;
+    top: 100px;
+    left: 10px;
+    
+    font-size: 28px;
+    color: var(--primary-color);
+    font-family: 'Changa', sans-serif;
+    background-color:rgb(229, 232, 238);
+}
+.text2  h2{
+
+  position: absolute;
+    border-radius: 5px;
+    top: 100px;
+    left: 10px;
+   
+    font-size: 28px;
+    color: var(--primary-color);
+    font-family: 'Changa', sans-serif;
+    background-color:rgb(229, 232, 238);
+}
+.text3  h2{
+
+  position: absolute;
+    border-radius: 5px;
+    top: 100px;
+    left: 10px;
+   
+    font-size: 28px;
+    color: var(--primary-color);
+    font-family: 'Changa', sans-serif;
+    background-color:rgb(229, 232, 238);
+}
+.text4  h2{
+
+  position: absolute;
+    border-radius: 5px;
+    top: 100px;
+    left: 10px;
+    
+    font-size: 28px;
+    color: var(--primary-color);
+    font-family: 'Changa', sans-serif;
+    background-color:rgb(229, 232, 238);
+}
+
+  
+  #contact-me ul li {
+    margin-top: 10px;
+  }
+  .contact-me{
+    margin: auto;
+  }
+  .contact-me ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: left;
+    list-style: none;
+    margin: 35px auto;
+    width: 100%;  
+    }
+  .contact-me ul li a {
+    color: var(--whitish);
+    margin: 0 30px;
+      font-size: 18px;
+      text-decoration: none;
+      border-bottom: 3px solid;
+      
+  }
+  
+.contact-my{
+  align-items: center;
+  padding-left: 400px;
+}
+.contact-my > div {
+  font-family: 'Changa', sans-serif;
+}
+
+.front{
+  display: inline;
+}
+ 
+
+  /* footer stylings here */
+  footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    background-color: hsl(235, 78%, 21%);
+    color: rgb(131, 195, 247);
+  }
+  
+  footer span {
+    font-size: 0.9rem;
+  }
+
+  @media screen and (max-width: 768px) {
+  
+    .article-content article h1 {
+      font-size: 2rem;
+      border-bottom: 2px dotted var(--green-color);
+      text-align: center;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+  
+    .article-content article h2 {
+      font-size: 1.6rem;
+      border-bottom: 2px dotted var(--green-color);
+      text-align: center;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+  
+    .article-content article p {
+      text-align: center;
+    }
+  
+    /* reduce the margin top for our main section */
+    main {
+      margin-top: 30px;
+    }
+  
+    /* hide every article heading - there's really no need for it on mobile */
+    .article-heading {
+      display: none;
+    }
+  
+    /* center contact me details */
+    #contact-me ul li {
+      text-align: center;
+    }
+  }
+  
+
+  @media screen and (max-width: 760px) {
+    /* change the header flex direction to column instead of row */
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header > div {
+      position: relative;
+      top: 0;
+    }
+  
+    header > nav {
+      margin-right: 0;
+      
+    }
+  
+    header > nav > ul > li {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+
+  
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
