@@ -4,9 +4,10 @@ Deployed page:  https://kdher.github.io/ReactPortfolio/
 ## Description
 This application uses React JS, to visualize the skills that I have learned in the course. 
 This aplication will be developed using Git, ReactJS, NPM Modules, HTML5. For live deployement I will be using, Github Pages.
-The application will be invoked with the following command:
+The application will be invoked with the following commands:
 ``` 
 npm run start
+npm run build
 ``` 
 ## Table of Contents
 - [Author info.](#autor-info) 
